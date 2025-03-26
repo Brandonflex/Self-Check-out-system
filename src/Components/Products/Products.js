@@ -6,7 +6,7 @@ const Products = () => {
     <div className="products">
       <h1>Products</h1>
       <p>Here you can find a variety of products available for purchase.</p>
-      {/* Add product listing here */}
+      <p>Click on the product to view more details.</p>
 
       <p>Product 1</p>
       <p>Product 2</p>

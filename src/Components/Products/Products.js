@@ -7,6 +7,11 @@ const Products = () => {
       <h1>Products</h1>
       <p>Here you can find a variety of products available for purchase.</p>
       {/* Add product listing here */}
+
+      <p>Product 1</p>
+      <p>Product 2</p>
+      <p>Product 3</p>
+      <p>product 4</p>
     </div>
   );
 };

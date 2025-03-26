@@ -5,7 +5,7 @@ const Checkout = () => {
   return (
     <div className="checkout">
       <h1>Checkout</h1>
-      <p>Review your items and proceed with the payment.</p>
+      <p></p>
     </div>
   );
 };

@@ -1,23 +1,28 @@
-import React from 'react';
-import './Products.css';
+import React from "react";
+import "./Products.css"; // Ensure you style the component appropriately
 
 const Products = () => {
-  // Mock product data
-  const productList = [
-    { id: 1, name: 'Apple', price: 1.0, image: 'https://via.placeholder.com/150' },
-    { id: 2, name: 'Banana', price: 0.5, image: 'https://via.placeholder.com/150' },
-    { id: 3, name: 'Orange', price: 0.8, image: 'https://via.placeholder.com/150' },
+  const products = [
+    { id: 1, name: "Basketball", price: 1500 },
+    { id: 2, name: "Basketball Jersey", price: 2500 },
+    { id: 3, name: "10ft Basketball Rim", price: 12000 },
+    { id: 4, name: "Basketball Shoes", price: 8000 },
   ];
+
+  const handleAddToCart = (product) => {
+    alert(`${product.name} added to cart!`);
+    // You can implement actual cart functionality here
+  };
 
   return (
     <div className="products">
-      <h1>Products</h1>
+      <h1>Product Listing</h1>
       <div className="product-list">
-        {productList.map((product) => (
+        {products.map((product) => (
           <div key={product.id} className="product-card">
-            <img src={product.image} alt={product.name} />
             <h2>{product.name}</h2>
-            <p>${product.price.toFixed(2)}</p>
+            <p>Price: Ksh {product.price.toLocaleString()}</p>
+            <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
           </div>
         ))}
       </div>

@@ -20,6 +20,18 @@ const Products = () => {
 
 
       <p>product 4 = Ksh 205/= <button>Add to cart</button></p>
+      
+
+      <p>Product 1 = ksh 250/= <button>Add to cart</button> </p>
+
+
+        <p>Product 2 = Ksh 1,500/= <button>Add to cart</button></p>
+
+
+        <p>Product 3 = Ksh 22,999/= <button>Add to cart</button></p>
+
+
+        <p>product 4 = Ksh 205/= <button>Add to cart</button></p>
     </div>
   );
 };

@@ -1,4 +1,129 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
 .products {
+
+  padding: 40px 20px; /* Increased padding for more space */
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem; /* Larger font size for better emphasis */
+  margin-bottom: 30px; /* Increased spacing below the heading */
+  color: #007bff;
+}
+
+/* Product List Styling */
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px; /* Increased width for more breathing room */
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-details {
+  text-align: left;
+  flex: 1; 
+}
+
+.product-item h2 {
+  font-size: 1.5rem; 
+  margin: 0 0 10px 0; 
+}
+
+.product-item p {
+  font-size: 1.1rem; 
+  margin: 0;
+  color: #555;
+}
+
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; 
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+.cart {
+  margin-top: 50px; 
+  text-align: left;
+  max-width: 900px; 
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 30px; /* Increased padding for a more open feel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.cart:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cart h2 {
+  font-size: 2rem; /* Larger font size for the cart heading */
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0; 
+  font-size: 1.1rem; 
+  color: #555;
+}
+
+.cart li:last-child {
+  border-bottom: none;
+}
+
+.cart p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+=======
   padding: 20px;
   text-align: center;
 }
@@ -69,4 +194,5 @@
 .cart li {
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
+
 }

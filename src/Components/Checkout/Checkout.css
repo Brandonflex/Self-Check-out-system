@@ -1,4 +1,167 @@
-.checkout {
+.checkout h1 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+.checkout > p {
+  color: #5c616a;
+  margin-bottom: 16px;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.order-summary,
+.checkout-form {
+  background: #fff;
+  border: 1px solid #ddd9d2;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.order-summary h2,
+.checkout-form h2 {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.summary-list {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+.summary-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eceae6;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.checkout-form label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.checkout-form input[type='text'] {
+  display: block;
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  border: 1px solid #cfcac2;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: inherit;
+  background: #fff;
+}
+
+.checkout-form input[type='text']:focus {
+  outline: 2px solid #22252a;
+  outline-offset: 0;
+  border-color: transparent;
+}
+
+.form-error {
+  color: #b3261e;
+  font-size: 0.85rem;
+  margin: -8px 0 12px;
+}
+
+.checkout-form fieldset {
+  border: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.checkout-form legend {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.checkout-form fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.checkout-note {
+  color: #7a7f87;
+  font-size: 0.85rem;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+/* Receipt */
+
+.receipt {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.receipt h1 {
   text-align: center;
-  padding: 2rem;
+}
+
+.receipt-id,
+.receipt-date {
+  text-align: center;
+  color: #5c616a;
+  margin-bottom: 4px;
+}
+
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 16px;
+  background: #fff;
+  border: 1px solid #ddd9d2;
+  border-radius: 8px;
+}
+
+.receipt-table th,
+.receipt-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eceae6;
+}
+
+.receipt-table thead th {
+  background: #f7f6f3;
+  font-size: 0.85rem;
+}
+
+.receipt-table tfoot td {
+  font-weight: 700;
+  border-bottom: none;
+}
+
+.receipt-meta {
+  color: #5c616a;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.receipt .btn {
+  margin-top: 16px;
 }
